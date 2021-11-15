@@ -1,0 +1,33 @@
+/// Requisição para cadastrar um Produto
+POST http://localhost:8080/produto
+Content-Type: application/json
+
+{
+  "id": 3,
+  "nome": "Camiseta PIPOCA Masculina",
+  "descricao": "Camisa 100% algodão",
+  "fotoUrl": "https://www.cz10.com.br/media/catalog/product/cache/1/image/390x390/9df78eab33525d08d6e5fb8d27136e95/j/u/jubileu-masculina-preto.jpg",
+  "dataCadastro": "2021-05-20",
+  "preco": "29.50"
+}
+
+###
+
+
+/// Requisição para buscar Produto
+GET http://localhost:8080/produto
+Accept: application/json
+
+###
+
+/// Requisição para buscar Produto por nome
+GET http://localhost:8080/produto/busca-por-nome?nome=Camiseta%20CATARATAS%20Masculina
+Accept: application/json
+
+###
+
+/// Requisição para Buscar Produto por Faixa de Preço
+GET http://localhost:8080/produto/busca-por-faixa-preco?valorMinimo=20.0&valorMaximo=40.0
+Accept: application/json
+
+###
