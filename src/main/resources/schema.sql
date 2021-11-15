@@ -5,5 +5,5 @@ CREATE TABLE produto(
                         preco                  FLOAT NOT NULL,
                         fotoUrl                VARCHAR(600),
                         dataCadastro           DATE NOT NULL,
-                        dataUltimaAtualizacao  TIMESTAMP NOT NULL,
+                        dataUltimaAtualizacao  TIMESTAMP NOT NULL
 );
